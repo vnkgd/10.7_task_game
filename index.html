@@ -7,6 +7,9 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.12.7/sweetalert2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.12.7/sweetalert2.min.css">
 </head>
 <body>
 <div class="container">
@@ -19,7 +22,8 @@
                 <div class="card-body">
                     <div class="row no-gutters">
                         <div class="col">
-                            <h3 class="card-title m-0"><span id="answerField">Вы загадали число 5?</span></h3>
+                            <h3 class="card-title m-0"><span id="answerField">Вы загадали число</span></h3>
+                            <h3 class="card-title m-0"><span id="answerFieldNumbers"></span></h3>
                         </div>
                     </div>
                 </div>
@@ -31,12 +35,32 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <button class="btn btn-link" id="btnRetry">Заново</button>
+                    <button class="btn btn-link" id="btnRetry">Заново. Тут проверка от -999 до 999</button>
                 </div>
+                <!-- <div class="card-footer">
+                    <input type="text" class="e-text-field sandbox-simple-form__field" name="int" placeholder="1234567890" id='Numbers'>
+                </div> -->
+                <div class="card-footer">
+                    <!-- <button class="btn btn-link" id="sweetalert2">Другой вид всплывашки</button> -->
+                    <button onclick="sweetAlert()">Другой вид всплывашки. Попробуй!</button>
+                    <!-- <button onclick="go()">Ok</button> --> 
+                </div>
+                <!-- <div class="sandbox-simple-form-result js-result" id="DigToStringResult" style="display: block;"></div> -->
+                <!-- <div class="sandbox-simple-form-result js-result" id="tekst" style="display: block;"></div> -->
+                <!-- <p id="tekst"></p> -->
+                
+                <!-- <a href="#" id="DigToStringResult">Хотите фокус? Кликните по этой ссылке, в появившемся окне введите любой текст и он появиться на этой странице. Не верите? Давайте попробуем. Кликайте уже</a> -->
             </div>
         </div>
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.12.7/sweetalert2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script src="js/script.js"></script>
+<script src="js/NumToWordsRus.js"></script>
+<!-- <script src="js/sweetalert.min.js"></script> -->
+<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
 </body>
 </html>

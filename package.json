@@ -1,0 +1,24 @@
+{
+  "name": "10.7_task_game",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u00001\u00000\u0000.\u00007\u0000_\u0000t\u0000a\u0000s\u0000k\u0000_\u0000g\u0000a\u0000m\u0000e\u0000\r\u0000 \u0000",
+  "main": "js/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vnkgd/10.7_task_game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vnkgd/10.7_task_game/issues"
+  },
+  "homepage": "https://github.com/vnkgd/10.7_task_game#readme",
+  "dependencies": {
+    "request": "^2.88.2",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^10.12.7"
+  }
+}
